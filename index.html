@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Catalogue</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <ul>
+        {% for product in products %}
+            <li>{{ product[1] }} - ${{ product[2] }}</li>  <!-- Assuming 'name' and 'price' are columns -->
+        {% endfor %}
+    </ul>
+    <a href="/add">Add New Product</a>
+</body>
+</html>
